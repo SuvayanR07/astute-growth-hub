@@ -25,7 +25,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-foreground text-[42px] sm:text-[56px] md:text-[72px] lg:text-[88px] xl:text-[100px] font-bold leading-[1.05] tracking-tight max-w-[75%] lg:max-w-[65%]"
+            className="text-foreground text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[72px] 2xl:text-[84px] font-bold leading-[1.05] tracking-tight max-w-[75%] lg:max-w-[65%]"
           >
             Accelerate your growth with data-driven digital marketing strategies
           </motion.h1>
