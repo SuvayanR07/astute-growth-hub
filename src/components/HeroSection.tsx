@@ -25,7 +25,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-foreground text-5xl sm:text-6xl md:text-7xl lg:text-[88px] xl:text-[100px] font-bold leading-[1.05] tracking-tight max-w-4xl"
+            className="text-foreground text-[36px] sm:text-[42px] md:text-[52px] lg:text-[64px] xl:text-[72px] font-bold leading-[1.08] tracking-tight max-w-4xl"
           >
             Accelerate your growth with data-driven digital marketing strategies
           </motion.h1>
@@ -34,7 +34,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="mt-10 text-foreground/80 text-lg md:text-xl lg:text-[22px] leading-relaxed max-w-xl"
+            className="mt-10 text-foreground/70 text-base md:text-lg lg:text-[20px] leading-[1.5] max-w-[560px]"
           >
             Our team of growth experts helps brands scale through PPC, paid social, and performance-focused marketing strategies that drive measurable growth.
           </motion.p>
