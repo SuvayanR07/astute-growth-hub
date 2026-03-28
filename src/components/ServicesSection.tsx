@@ -58,7 +58,7 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="bg-surface-gray">
-      <div className="max-w-[1600px] mx-auto px-8 md:px-16 py-28 md:py-40">
+      <div className="max-w-[1600px] mx-auto px-8 md:px-16 pb-28 md:pb-40">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           <motion.div
             ref={labelRef}
