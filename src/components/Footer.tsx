@@ -5,10 +5,8 @@ const Footer = () => (
         <div>
           <span className="text-primary-foreground text-xl font-bold tracking-tight">Astute Digital</span>
         </div>
-        <div className="text-primary-foreground/70 text-sm leading-relaxed space-y-1">
-          <p>123 Marketing Street</p>
-          <p>London, EC1A 1BB</p>
-          <p className="mt-3">hello@astutedigital.com</p>
+        <div className="text-primary-foreground/70 text-sm leading-relaxed">
+          <p>Paris, France</p>
         </div>
       </div>
 
