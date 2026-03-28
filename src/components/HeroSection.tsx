@@ -41,7 +41,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="text-foreground/70 text-base md:text-lg lg:text-[18px] leading-[1.55] max-w-[480px]"
             >
-              Our team of growth experts helps brands scale through PPC, paid social, and performance-focused marketing strategies that drive measurable growth.
+              Our growth experts helps brands scale through PPC, paid social, and performance-focused marketing strategies that drive measurable growth.
             </motion.p>
 
             <motion.div
