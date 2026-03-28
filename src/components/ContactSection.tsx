@@ -1,15 +1,37 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, FormEvent } from "react";
+import { toast } from "sonner";
+
+const W3FORMS_ACCESS_KEY = "d2f3dcc9-066e-4708-8ef2-6e5dd73d0369";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Ready for W3Forms integration
-    setSubmitted(true);
+    setLoading(true);
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", W3FORMS_ACCESS_KEY);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } catch {
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
