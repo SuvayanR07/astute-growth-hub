@@ -8,7 +8,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="bg-surface-gray">
-      <div className="max-w-[1600px] mx-auto px-8 md:px-16 py-28 md:py-40">
+      <div className="max-w-[1600px] mx-auto px-8 md:px-16 pt-28 md:pt-40 pb-16 md:pb-20">
         <div ref={ref} className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           <motion.div
             initial={{ opacity: 0 }}
