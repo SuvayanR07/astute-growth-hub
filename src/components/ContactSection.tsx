@@ -89,8 +89,9 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   className="bg-primary text-primary-foreground rounded-full px-12 py-4 text-base font-semibold tracking-wide hover:bg-foreground/85 transition-colors duration-300"
+                  disabled={loading}
                 >
-                  Submit
+                  {loading ? "Sending..." : "Submit"}
                 </button>
               </form>
             )}
