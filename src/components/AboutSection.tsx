@@ -18,6 +18,14 @@ const AboutSection = () => {
             className="lg:w-48 shrink-0"
           >
             <span className="text-foreground font-bold text-base tracking-wide">About Us</span>
+            <img
+              src={aboutVisual}
+              alt="Mobile analytics dashboard"
+              loading="lazy"
+              width={560}
+              height={560}
+              className="w-full h-auto rounded-lg mt-8 max-w-[200px]"
+            />
           </motion.div>
 
           <motion.div
@@ -32,22 +40,6 @@ const AboutSection = () => {
             <p className="mt-8 text-foreground/70 text-lg md:text-xl leading-relaxed max-w-2xl">
               We believe in strategy, clarity, and measurable outcomes. Our approach combines paid media expertise, growth thinking, and continuous optimization to help brands attract the right audience and turn attention into revenue.
             </p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="mt-12 max-w-[280px]"
-            >
-              <img
-                src={aboutVisual}
-                alt="Mobile analytics dashboard"
-                loading="lazy"
-                width={560}
-                height={560}
-                className="w-full h-auto rounded-lg"
-              />
-            </motion.div>
           </motion.div>
         </div>
       </div>
